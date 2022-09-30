@@ -20,7 +20,7 @@ def pedir_letra(letras_usadas):
 
     while True:
 
-        letra_ingresada = str(input('Ingrese una nueva letra no usada anteriormente : '))
+        letra_ingresada = str(input('Ingrese una nueva letra no repita las ya usadas anteriormente: '))
         letra = letra_ingresada.lower()
         if len(letra) > 1:
             continue
@@ -32,7 +32,7 @@ def pedir_letra(letras_usadas):
                 letras_usadas.append(letra)
         return(letra)
 
-        break
+        
 
 
 
