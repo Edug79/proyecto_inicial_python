@@ -8,13 +8,15 @@ def leer_palabra_secreta(csvfilename):
     archivo = 'palabras.csv'
     with open(archivo) as f:
         palabras = list(f)
-   
+            
+       
     palabra_secreta = random.choice(palabras)
-    
-    
+
+    palabra_secreta = palabra_secreta.strip()
+
     return(palabra_secreta)
        
-
+    
 
 def pedir_letra(letras_usadas):
 
